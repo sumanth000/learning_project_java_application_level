@@ -7,7 +7,7 @@ public class gitJavaUpcastingDowncasting {
 
 
 		// 1️⃣ Normal object creation
-		Android obj1 = new Android();
+		Android1 obj1 = new Android1();
 		obj1.ringtone();
 		obj1.wala();
 
@@ -16,7 +16,7 @@ public class gitJavaUpcastingDowncasting {
 
 
 		// 2️⃣ Upcasting (Parent reference → Child object)
-		Android obj2 = new Samsung();
+		Android1 obj2 = new Samsung1();
 		obj2.ringtone(); // Child version (overridden method)
 		obj2.wala(); // Parent method
 
@@ -27,8 +27,8 @@ public class gitJavaUpcastingDowncasting {
 		System.out.println();
 
 
-		// 3️⃣ Child reference → Child object
-		Samsung obj3 = new Samsung();
+		// 3️⃣ Child reference → Chi1ld object
+		Samsung1 obj3 = new Samsung1();
 		obj3.wala(); // Parent method
 		obj3.ringtone(); // Child overridden method
 		obj3.method(); // Child specific method
@@ -38,8 +38,8 @@ public class gitJavaUpcastingDowncasting {
 
 
 		// 4️⃣ Downcasting
-		Android obj4 = new Samsung(); // Upcasting first
-		Samsung o = (Samsung) obj4; // Downcasting
+		Android1 obj4 = new Samsung1(); // Upcasting first
+		Samsung1 o = (Samsung1) obj4; // Downcasting
 
 
 		o.ringtone();
@@ -49,7 +49,7 @@ public class gitJavaUpcastingDowncasting {
 
 }
 //Parent class
-class Android {
+class Android1 {
 	
 				void ringtone() {
 				System.out.println("Android ringtone");
@@ -61,7 +61,7 @@ class Android {
 
 
 //Child class
-class Samsung extends Android {
+class Samsung1 extends Android1 {
 
 			
 			@Override
