@@ -1,4 +1,4 @@
-package package2;
+package javaHandsOn;
 import java.util.*;
 
 public class testrun {
